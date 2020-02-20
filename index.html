@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Drunk walk</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="drunk.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+	<div id="app">
+		<button id="button" class="option" onclick="regenerate()">Regenerate</button>
+		<br>
+		<div class="option">
+			Change in angle:
+			<input type="number" id="d_angle" min="0" max="360" value="60">
+		</div>
+		<div class="option">
+			Distance:
+			<input type="number" id="d_distance" value="5">
+		</div>
+		<div class="option">
+			Steps:
+			<input type="number" id="steps" value="100">
+		</div>
+		<div class="option">
+			Thickness:
+			<input type="number" id="thickness" min="1" value="5">
+		</div>
+		<div class="option">
+			Wiggly:
+			<input type="checkbox" id="wiggly" value="false">
+		</div>
+		<div id="svg_container"></div>
+	</div>
+</body>
+</html>
